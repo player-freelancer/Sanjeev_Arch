@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1837F82055BE38005FC84F /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1837F62055BE38005FC84F /* GalleryVC.swift */; };
+		FA1837F92055BE38005FC84F /* GalleryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1837F72055BE38005FC84F /* GalleryVC.xib */; };
+		FA1837FD2055BF77005FC84F /* GalleryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1837FB2055BF77005FC84F /* GalleryCVCell.swift */; };
+		FA1837FE2055BF77005FC84F /* GalleryCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1837FC2055BF77005FC84F /* GalleryCVCell.xib */; };
+		FA261A91205469120071D412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261A90205469120071D412 /* AppDelegate.swift */; };
+		FA261A93205469120071D412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261A92205469120071D412 /* ViewController.swift */; };
+		FA261A96205469120071D412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA261A94205469120071D412 /* Main.storyboard */; };
+		FA261A98205469120071D412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA261A97205469120071D412 /* Assets.xcassets */; };
+		FA261A9B205469120071D412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA261A99205469120071D412 /* LaunchScreen.storyboard */; };
+		FA261AA520546A570071D412 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AA320546A570071D412 /* NavigationVC.swift */; };
+		FA261AA620546A570071D412 /* NavigationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA261AA420546A570071D412 /* NavigationVC.xib */; };
+		FA261AAD20546ACA0071D412 /* CustomLeftMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA261AA920546ACA0071D412 /* CustomLeftMenuTableViewCell.xib */; };
+		FA261AAE20546ACA0071D412 /* ViewLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AAA20546ACA0071D412 /* ViewLeftMenu.swift */; };
+		FA261AAF20546ACA0071D412 /* CustomLeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AAB20546ACA0071D412 /* CustomLeftMenuTableViewCell.swift */; };
+		FA261AB020546ACA0071D412 /* ViewLeftMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA261AAC20546ACA0071D412 /* ViewLeftMenu.xib */; };
+		FA261ABA20546B030071D412 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB220546B030071D412 /* StringExt.swift */; };
+		FA261ABB20546B030071D412 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB320546B030071D412 /* ColorExt.swift */; };
+		FA261ABC20546B030071D412 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB420546B030071D412 /* Reachability.swift */; };
+		FA261ABD20546B030071D412 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB520546B030071D412 /* WebService.swift */; };
+		FA261ABE20546B030071D412 /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB620546B030071D412 /* FontExt.swift */; };
+		FA261ABF20546B030071D412 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB720546B030071D412 /* CommonFile.swift */; };
+		FA261AC020546B030071D412 /* AlertVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB820546B030071D412 /* AlertVCExt.swift */; };
+		FA261AC120546B030071D412 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AB920546B030071D412 /* DeviceInfo.swift */; };
+		FA261AC620546BF00071D412 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AC420546BF00071D412 /* HomeVC.swift */; };
+		FA261AC720546BF00071D412 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA261AC520546BF00071D412 /* HomeVC.xib */; };
+		FA95E3532056EDF6001CE38A /* WhatsApp48.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F42056EDF5001CE38A /* WhatsApp48.jpeg */; };
+		FA95E3542056EDF6001CE38A /* WhatsApp33.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F52056EDF5001CE38A /* WhatsApp33.jpeg */; };
+		FA95E3552056EDF6001CE38A /* WhatsApp64.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F62056EDF5001CE38A /* WhatsApp64.jpeg */; };
+		FA95E3562056EDF6001CE38A /* WhatsApp72.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F72056EDF5001CE38A /* WhatsApp72.jpeg */; };
+		FA95E3572056EDF6001CE38A /* WhatsApp25.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F82056EDF5001CE38A /* WhatsApp25.jpeg */; };
+		FA95E3582056EDF6001CE38A /* WhatsApp52.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2F92056EDF5001CE38A /* WhatsApp52.jpeg */; };
+		FA95E3592056EDF6001CE38A /* WhatsApp13.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FA2056EDF5001CE38A /* WhatsApp13.jpeg */; };
+		FA95E35A2056EDF6001CE38A /* WhatsApp44.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FB2056EDF5001CE38A /* WhatsApp44.jpeg */; };
+		FA95E35B2056EDF6001CE38A /* WhatsApp3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FC2056EDF5001CE38A /* WhatsApp3.jpeg */; };
+		FA95E35C2056EDF6001CE38A /* WhatsApp87.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FD2056EDF5001CE38A /* WhatsApp87.jpeg */; };
+		FA95E35D2056EDF6001CE38A /* WhatsApp68.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FE2056EDF5001CE38A /* WhatsApp68.jpeg */; };
+		FA95E35E2056EDF6001CE38A /* WhatsApp91.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E2FF2056EDF5001CE38A /* WhatsApp91.jpeg */; };
+		FA95E35F2056EDF6001CE38A /* WhatsApp29.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3002056EDF5001CE38A /* WhatsApp29.jpeg */; };
+		FA95E3602056EDF6001CE38A /* WhatsApp28.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3012056EDF5001CE38A /* WhatsApp28.jpeg */; };
+		FA95E3612056EDF6001CE38A /* WhatsApp90.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3022056EDF5001CE38A /* WhatsApp90.jpeg */; };
+		FA95E3622056EDF6001CE38A /* WhatsApp86.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3032056EDF5001CE38A /* WhatsApp86.jpeg */; };
+		FA95E3632056EDF6001CE38A /* WhatsApp69.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3042056EDF5001CE38A /* WhatsApp69.jpeg */; };
+		FA95E3652056EDF6001CE38A /* WhatsApp45.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3062056EDF5001CE38A /* WhatsApp45.jpeg */; };
+		FA95E3662056EDF6001CE38A /* WhatsApp12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3072056EDF5001CE38A /* WhatsApp12.jpeg */; };
+		FA95E3672056EDF6001CE38A /* WhatsApp53.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3082056EDF5001CE38A /* WhatsApp53.jpeg */; };
+		FA95E3682056EDF6001CE38A /* WhatsApp24.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3092056EDF5001CE38A /* WhatsApp24.jpeg */; };
+		FA95E3692056EDF6001CE38A /* WhatsApp73.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30A2056EDF5001CE38A /* WhatsApp73.jpeg */; };
+		FA95E36A2056EDF6001CE38A /* WhatsApp65.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30B2056EDF5001CE38A /* WhatsApp65.jpeg */; };
+		FA95E36B2056EDF6001CE38A /* WhatsApp32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30C2056EDF5001CE38A /* WhatsApp32.jpeg */; };
+		FA95E36C2056EDF6001CE38A /* WhatsApp49.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30D2056EDF5001CE38A /* WhatsApp49.jpeg */; };
+		FA95E36D2056EDF6001CE38A /* WhatsApp54.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30E2056EDF5001CE38A /* WhatsApp54.jpeg */; };
+		FA95E36E2056EDF6001CE38A /* WhatsApp15.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E30F2056EDF5001CE38A /* WhatsApp15.jpeg */; };
+		FA95E36F2056EDF6001CE38A /* WhatsApp42.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3102056EDF5001CE38A /* WhatsApp42.jpeg */; };
+		FA95E3702056EDF6001CE38A /* WhatsApp5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3112056EDF5001CE38A /* WhatsApp5.jpeg */; };
+		FA95E3712056EDF6001CE38A /* WhatsApp39.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3122056EDF5001CE38A /* WhatsApp39.jpeg */; };
+		FA95E3722056EDF6001CE38A /* WhatsApp81.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3132056EDF5001CE38A /* WhatsApp81.jpeg */; };
+		FA95E3732056EDF6001CE38A /* WhatsApp78.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3142056EDF5001CE38A /* WhatsApp78.jpeg */; };
+		FA95E3742056EDF6001CE38A /* WhatsApp58.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3152056EDF5001CE38A /* WhatsApp58.jpeg */; };
+		FA95E3752056EDF6001CE38A /* WhatsApp19.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3162056EDF5001CE38A /* WhatsApp19.jpeg */; };
+		FA95E3762056EDF6001CE38A /* WhatsApp9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3172056EDF5001CE38A /* WhatsApp9.jpeg */; };
+		FA95E3772056EDF6001CE38A /* WhatsApp35.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3182056EDF5001CE38A /* WhatsApp35.jpeg */; };
+		FA95E3782056EDF6001CE38A /* WhatsApp62.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3192056EDF5001CE38A /* WhatsApp62.jpeg */; };
+		FA95E3792056EDF6001CE38A /* WhatsApp74.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31A2056EDF5001CE38A /* WhatsApp74.jpeg */; };
+		FA95E37A2056EDF6001CE38A /* WhatsApp23.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31B2056EDF5001CE38A /* WhatsApp23.jpeg */; };
+		FA95E37B2056EDF6001CE38A /* WhatsApp22.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31C2056EDF5001CE38A /* WhatsApp22.jpeg */; };
+		FA95E37C2056EDF6001CE38A /* WhatsApp75.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31D2056EDF5001CE38A /* WhatsApp75.jpeg */; };
+		FA95E37D2056EDF6001CE38A /* WhatsApp63.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31E2056EDF5001CE38A /* WhatsApp63.jpeg */; };
+		FA95E37E2056EDF6001CE38A /* WhatsApp8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E31F2056EDF5001CE38A /* WhatsApp8.jpeg */; };
+		FA95E37F2056EDF6001CE38A /* WhatsApp34.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3202056EDF5001CE38A /* WhatsApp34.jpeg */; };
+		FA95E3802056EDF6001CE38A /* WhatsApp18.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3212056EDF5001CE38A /* WhatsApp18.jpeg */; };
+		FA95E3812056EDF6001CE38A /* WhatsApp59.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3222056EDF5001CE38A /* WhatsApp59.jpeg */; };
+		FA95E3822056EDF6001CE38A /* WhatsApp79.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3232056EDF5001CE38A /* WhatsApp79.jpeg */; };
+		FA95E3832056EDF6001CE38A /* WhatsApp80.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3242056EDF5001CE38A /* WhatsApp80.jpeg */; };
+		FA95E3842056EDF6001CE38A /* WhatsApp4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3252056EDF5001CE38A /* WhatsApp4.jpeg */; };
+		FA95E3852056EDF6001CE38A /* WhatsApp38.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3262056EDF5001CE38A /* WhatsApp38.jpeg */; };
+		FA95E3862056EDF6001CE38A /* WhatsApp43.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3272056EDF5001CE38A /* WhatsApp43.jpeg */; };
+		FA95E3872056EDF6001CE38A /* WhatsApp14.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3282056EDF5001CE38A /* WhatsApp14.jpeg */; };
+		FA95E3882056EDF6001CE38A /* WhatsApp55.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3292056EDF5001CE38A /* WhatsApp55.jpeg */; };
+		FA95E3892056EDF6001CE38A /* WhatsApp83.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32A2056EDF5001CE38A /* WhatsApp83.jpeg */; };
+		FA95E38A2056EDF6001CE38A /* WhatsApp7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32B2056EDF5001CE38A /* WhatsApp7.jpeg */; };
+		FA95E38B2056EDF6001CE38A /* WhatsApp40.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32C2056EDF5001CE38A /* WhatsApp40.jpeg */; };
+		FA95E38C2056EDF6001CE38A /* WhatsApp17.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32D2056EDF5001CE38A /* WhatsApp17.jpeg */; };
+		FA95E38D2056EDF6001CE38A /* WhatsApp56.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32E2056EDF5001CE38A /* WhatsApp56.jpeg */; };
+		FA95E38E2056EDF6001CE38A /* WhatsApp21.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E32F2056EDF5001CE38A /* WhatsApp21.jpeg */; };
+		FA95E38F2056EDF6001CE38A /* WhatsApp76.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3302056EDF5001CE38A /* WhatsApp76.jpeg */; };
+		FA95E3902056EDF6001CE38A /* WhatsApp60.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3312056EDF5001CE38A /* WhatsApp60.jpeg */; };
+		FA95E3912056EDF6001CE38A /* WhatsApp37.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3322056EDF5001CE38A /* WhatsApp37.jpeg */; };
+		FA95E3922056EDF6001CE38A /* WhatsApp36.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3332056EDF5001CE38A /* WhatsApp36.jpeg */; };
+		FA95E3932056EDF6001CE38A /* WhatsApp61.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3342056EDF5001CE38A /* WhatsApp61.jpeg */; };
+		FA95E3942056EDF6001CE38A /* WhatsApp77.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3352056EDF5001CE38A /* WhatsApp77.jpeg */; };
+		FA95E3952056EDF6001CE38A /* WhatsApp20.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3362056EDF5001CE38A /* WhatsApp20.jpeg */; };
+		FA95E3962056EDF6001CE38A /* WhatsApp57.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3372056EDF5001CE38A /* WhatsApp57.jpeg */; };
+		FA95E3972056EDF6001CE38A /* WhatsApp16.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3382056EDF5001CE38A /* WhatsApp16.jpeg */; };
+		FA95E3982056EDF6001CE38A /* WhatsApp41.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3392056EDF5001CE38A /* WhatsApp41.jpeg */; };
+		FA95E3992056EDF6001CE38A /* WhatsApp6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33A2056EDF5001CE38A /* WhatsApp6.jpeg */; };
+		FA95E39A2056EDF6001CE38A /* WhatsApp82.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33B2056EDF5001CE38A /* WhatsApp82.jpeg */; };
+		FA95E39B2056EDF6001CE38A /* WhatsApp94.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33C2056EDF5001CE38A /* WhatsApp94.jpeg */; };
+		FA95E39C2056EDF6001CE38A /* WhatsApp27.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33D2056EDF5001CE38A /* WhatsApp27.jpeg */; };
+		FA95E39D2056EDF6001CE38A /* WhatsApp70.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33E2056EDF5001CE38A /* WhatsApp70.jpeg */; };
+		FA95E39E2056EDF6001CE38A /* WhatsApp66.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E33F2056EDF5001CE38A /* WhatsApp66.jpeg */; };
+		FA95E39F2056EDF6001CE38A /* WhatsApp89.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3402056EDF5001CE38A /* WhatsApp89.jpeg */; };
+		FA95E3A02056EDF6001CE38A /* WhatsApp31.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3412056EDF5001CE38A /* WhatsApp31.jpeg */; };
+		FA95E3A12056EDF6001CE38A /* WhatsApp93.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3422056EDF5001CE38A /* WhatsApp93.jpeg */; };
+		FA95E3A22056EDF6001CE38A /* WhatsApp85.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3432056EDF5001CE38A /* WhatsApp85.jpeg */; };
+		FA95E3A42056EDF6001CE38A /* WhatsApp46.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3452056EDF5001CE38A /* WhatsApp46.jpeg */; };
+		FA95E3A52056EDF6001CE38A /* WhatsApp11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3462056EDF5001CE38A /* WhatsApp11.jpeg */; };
+		FA95E3A62056EDF6001CE38A /* WhatsApp50.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3472056EDF5001CE38A /* WhatsApp50.jpeg */; };
+		FA95E3A72056EDF6001CE38A /* WhatsApp51.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3482056EDF5001CE38A /* WhatsApp51.jpeg */; };
+		FA95E3A82056EDF6001CE38A /* WhatsApp10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3492056EDF5001CE38A /* WhatsApp10.jpeg */; };
+		FA95E3A92056EDF6001CE38A /* WhatsApp47.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E34A2056EDF5001CE38A /* WhatsApp47.jpeg */; };
+		FA95E3AB2056EDF6001CE38A /* WhatsApp84.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E34C2056EDF5001CE38A /* WhatsApp84.jpeg */; };
+		FA95E3AC2056EDF6001CE38A /* WhatsApp92.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E34D2056EDF5001CE38A /* WhatsApp92.jpeg */; };
+		FA95E3AD2056EDF6001CE38A /* WhatsApp30.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E34E2056EDF5001CE38A /* WhatsApp30.jpeg */; };
+		FA95E3AE2056EDF6001CE38A /* WhatsApp67.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E34F2056EDF5001CE38A /* WhatsApp67.jpeg */; };
+		FA95E3AF2056EDF6001CE38A /* WhatsApp88.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3502056EDF5001CE38A /* WhatsApp88.jpeg */; };
+		FA95E3B02056EDF6001CE38A /* WhatsApp71.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3512056EDF5001CE38A /* WhatsApp71.jpeg */; };
+		FA95E3B12056EDF6001CE38A /* WhatsApp26.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3522056EDF5001CE38A /* WhatsApp26.jpeg */; };
+		FA95E3BB2056F56B001CE38A /* WhatsApp1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3B82056F56A001CE38A /* WhatsApp1.jpeg */; };
+		FA95E3BC2056F56B001CE38A /* WhatsApp0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3B92056F56B001CE38A /* WhatsApp0.jpeg */; };
+		FA95E3BD2056F56B001CE38A /* WhatsApp2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3BA2056F56B001CE38A /* WhatsApp2.jpeg */; };
+		FA95E3C12056F98C001CE38A /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95E3BF2056F98C001CE38A /* ContactUsVC.swift */; };
+		FA95E3C22056F98C001CE38A /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA95E3C02056F98C001CE38A /* ContactUsVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1837F62055BE38005FC84F /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		FA1837F72055BE38005FC84F /* GalleryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryVC.xib; sourceTree = "<group>"; };
+		FA1837FB2055BF77005FC84F /* GalleryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCVCell.swift; sourceTree = "<group>"; };
+		FA1837FC2055BF77005FC84F /* GalleryCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCVCell.xib; sourceTree = "<group>"; };
+		FA261A8D205469120071D412 /* Arch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA261A90205469120071D412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA261A92205469120071D412 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA261A95205469120071D412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA261A97205469120071D412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA261A9A205469120071D412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA261A9C205469120071D412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA261AA320546A570071D412 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		FA261AA420546A570071D412 /* NavigationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationVC.xib; sourceTree = "<group>"; };
+		FA261AA920546ACA0071D412 /* CustomLeftMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLeftMenuTableViewCell.xib; sourceTree = "<group>"; };
+		FA261AAA20546ACA0071D412 /* ViewLeftMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLeftMenu.swift; sourceTree = "<group>"; };
+		FA261AAB20546ACA0071D412 /* CustomLeftMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FA261AAC20546ACA0071D412 /* ViewLeftMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewLeftMenu.xib; sourceTree = "<group>"; };
+		FA261AB220546B030071D412 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		FA261AB320546B030071D412 /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		FA261AB420546B030071D412 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FA261AB520546B030071D412 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FA261AB620546B030071D412 /* FontExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
+		FA261AB720546B030071D412 /* CommonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFile.swift; sourceTree = "<group>"; };
+		FA261AB820546B030071D412 /* AlertVCExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertVCExt.swift; sourceTree = "<group>"; };
+		FA261AB920546B030071D412 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		FA261AC420546BF00071D412 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FA261AC520546BF00071D412 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		FA95E2F42056EDF5001CE38A /* WhatsApp48.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp48.jpeg; sourceTree = "<group>"; };
+		FA95E2F52056EDF5001CE38A /* WhatsApp33.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp33.jpeg; sourceTree = "<group>"; };
+		FA95E2F62056EDF5001CE38A /* WhatsApp64.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp64.jpeg; sourceTree = "<group>"; };
+		FA95E2F72056EDF5001CE38A /* WhatsApp72.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp72.jpeg; sourceTree = "<group>"; };
+		FA95E2F82056EDF5001CE38A /* WhatsApp25.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp25.jpeg; sourceTree = "<group>"; };
+		FA95E2F92056EDF5001CE38A /* WhatsApp52.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp52.jpeg; sourceTree = "<group>"; };
+		FA95E2FA2056EDF5001CE38A /* WhatsApp13.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp13.jpeg; sourceTree = "<group>"; };
+		FA95E2FB2056EDF5001CE38A /* WhatsApp44.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp44.jpeg; sourceTree = "<group>"; };
+		FA95E2FC2056EDF5001CE38A /* WhatsApp3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp3.jpeg; sourceTree = "<group>"; };
+		FA95E2FD2056EDF5001CE38A /* WhatsApp87.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp87.jpeg; sourceTree = "<group>"; };
+		FA95E2FE2056EDF5001CE38A /* WhatsApp68.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp68.jpeg; sourceTree = "<group>"; };
+		FA95E2FF2056EDF5001CE38A /* WhatsApp91.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp91.jpeg; sourceTree = "<group>"; };
+		FA95E3002056EDF5001CE38A /* WhatsApp29.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp29.jpeg; sourceTree = "<group>"; };
+		FA95E3012056EDF5001CE38A /* WhatsApp28.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp28.jpeg; sourceTree = "<group>"; };
+		FA95E3022056EDF5001CE38A /* WhatsApp90.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp90.jpeg; sourceTree = "<group>"; };
+		FA95E3032056EDF5001CE38A /* WhatsApp86.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp86.jpeg; sourceTree = "<group>"; };
+		FA95E3042056EDF5001CE38A /* WhatsApp69.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp69.jpeg; sourceTree = "<group>"; };
+		FA95E3062056EDF5001CE38A /* WhatsApp45.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp45.jpeg; sourceTree = "<group>"; };
+		FA95E3072056EDF5001CE38A /* WhatsApp12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp12.jpeg; sourceTree = "<group>"; };
+		FA95E3082056EDF5001CE38A /* WhatsApp53.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp53.jpeg; sourceTree = "<group>"; };
+		FA95E3092056EDF5001CE38A /* WhatsApp24.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp24.jpeg; sourceTree = "<group>"; };
+		FA95E30A2056EDF5001CE38A /* WhatsApp73.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp73.jpeg; sourceTree = "<group>"; };
+		FA95E30B2056EDF5001CE38A /* WhatsApp65.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp65.jpeg; sourceTree = "<group>"; };
+		FA95E30C2056EDF5001CE38A /* WhatsApp32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp32.jpeg; sourceTree = "<group>"; };
+		FA95E30D2056EDF5001CE38A /* WhatsApp49.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp49.jpeg; sourceTree = "<group>"; };
+		FA95E30E2056EDF5001CE38A /* WhatsApp54.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp54.jpeg; sourceTree = "<group>"; };
+		FA95E30F2056EDF5001CE38A /* WhatsApp15.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp15.jpeg; sourceTree = "<group>"; };
+		FA95E3102056EDF5001CE38A /* WhatsApp42.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp42.jpeg; sourceTree = "<group>"; };
+		FA95E3112056EDF5001CE38A /* WhatsApp5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp5.jpeg; sourceTree = "<group>"; };
+		FA95E3122056EDF5001CE38A /* WhatsApp39.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp39.jpeg; sourceTree = "<group>"; };
+		FA95E3132056EDF5001CE38A /* WhatsApp81.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp81.jpeg; sourceTree = "<group>"; };
+		FA95E3142056EDF5001CE38A /* WhatsApp78.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp78.jpeg; sourceTree = "<group>"; };
+		FA95E3152056EDF5001CE38A /* WhatsApp58.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp58.jpeg; sourceTree = "<group>"; };
+		FA95E3162056EDF5001CE38A /* WhatsApp19.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp19.jpeg; sourceTree = "<group>"; };
+		FA95E3172056EDF5001CE38A /* WhatsApp9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp9.jpeg; sourceTree = "<group>"; };
+		FA95E3182056EDF5001CE38A /* WhatsApp35.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp35.jpeg; sourceTree = "<group>"; };
+		FA95E3192056EDF5001CE38A /* WhatsApp62.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp62.jpeg; sourceTree = "<group>"; };
+		FA95E31A2056EDF5001CE38A /* WhatsApp74.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp74.jpeg; sourceTree = "<group>"; };
+		FA95E31B2056EDF5001CE38A /* WhatsApp23.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp23.jpeg; sourceTree = "<group>"; };
+		FA95E31C2056EDF5001CE38A /* WhatsApp22.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp22.jpeg; sourceTree = "<group>"; };
+		FA95E31D2056EDF5001CE38A /* WhatsApp75.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp75.jpeg; sourceTree = "<group>"; };
+		FA95E31E2056EDF5001CE38A /* WhatsApp63.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp63.jpeg; sourceTree = "<group>"; };
+		FA95E31F2056EDF5001CE38A /* WhatsApp8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp8.jpeg; sourceTree = "<group>"; };
+		FA95E3202056EDF5001CE38A /* WhatsApp34.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp34.jpeg; sourceTree = "<group>"; };
+		FA95E3212056EDF5001CE38A /* WhatsApp18.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp18.jpeg; sourceTree = "<group>"; };
+		FA95E3222056EDF5001CE38A /* WhatsApp59.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp59.jpeg; sourceTree = "<group>"; };
+		FA95E3232056EDF5001CE38A /* WhatsApp79.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp79.jpeg; sourceTree = "<group>"; };
+		FA95E3242056EDF5001CE38A /* WhatsApp80.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp80.jpeg; sourceTree = "<group>"; };
+		FA95E3252056EDF5001CE38A /* WhatsApp4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp4.jpeg; sourceTree = "<group>"; };
+		FA95E3262056EDF5001CE38A /* WhatsApp38.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp38.jpeg; sourceTree = "<group>"; };
+		FA95E3272056EDF5001CE38A /* WhatsApp43.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp43.jpeg; sourceTree = "<group>"; };
+		FA95E3282056EDF5001CE38A /* WhatsApp14.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp14.jpeg; sourceTree = "<group>"; };
+		FA95E3292056EDF5001CE38A /* WhatsApp55.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp55.jpeg; sourceTree = "<group>"; };
+		FA95E32A2056EDF5001CE38A /* WhatsApp83.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp83.jpeg; sourceTree = "<group>"; };
+		FA95E32B2056EDF5001CE38A /* WhatsApp7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp7.jpeg; sourceTree = "<group>"; };
+		FA95E32C2056EDF5001CE38A /* WhatsApp40.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp40.jpeg; sourceTree = "<group>"; };
+		FA95E32D2056EDF5001CE38A /* WhatsApp17.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp17.jpeg; sourceTree = "<group>"; };
+		FA95E32E2056EDF5001CE38A /* WhatsApp56.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp56.jpeg; sourceTree = "<group>"; };
+		FA95E32F2056EDF5001CE38A /* WhatsApp21.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp21.jpeg; sourceTree = "<group>"; };
+		FA95E3302056EDF5001CE38A /* WhatsApp76.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp76.jpeg; sourceTree = "<group>"; };
+		FA95E3312056EDF5001CE38A /* WhatsApp60.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp60.jpeg; sourceTree = "<group>"; };
+		FA95E3322056EDF5001CE38A /* WhatsApp37.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp37.jpeg; sourceTree = "<group>"; };
+		FA95E3332056EDF5001CE38A /* WhatsApp36.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp36.jpeg; sourceTree = "<group>"; };
+		FA95E3342056EDF5001CE38A /* WhatsApp61.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp61.jpeg; sourceTree = "<group>"; };
+		FA95E3352056EDF5001CE38A /* WhatsApp77.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp77.jpeg; sourceTree = "<group>"; };
+		FA95E3362056EDF5001CE38A /* WhatsApp20.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp20.jpeg; sourceTree = "<group>"; };
+		FA95E3372056EDF5001CE38A /* WhatsApp57.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp57.jpeg; sourceTree = "<group>"; };
+		FA95E3382056EDF5001CE38A /* WhatsApp16.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp16.jpeg; sourceTree = "<group>"; };
+		FA95E3392056EDF5001CE38A /* WhatsApp41.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp41.jpeg; sourceTree = "<group>"; };
+		FA95E33A2056EDF5001CE38A /* WhatsApp6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp6.jpeg; sourceTree = "<group>"; };
+		FA95E33B2056EDF5001CE38A /* WhatsApp82.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp82.jpeg; sourceTree = "<group>"; };
+		FA95E33C2056EDF5001CE38A /* WhatsApp94.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp94.jpeg; sourceTree = "<group>"; };
+		FA95E33D2056EDF5001CE38A /* WhatsApp27.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp27.jpeg; sourceTree = "<group>"; };
+		FA95E33E2056EDF5001CE38A /* WhatsApp70.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp70.jpeg; sourceTree = "<group>"; };
+		FA95E33F2056EDF5001CE38A /* WhatsApp66.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp66.jpeg; sourceTree = "<group>"; };
+		FA95E3402056EDF5001CE38A /* WhatsApp89.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp89.jpeg; sourceTree = "<group>"; };
+		FA95E3412056EDF5001CE38A /* WhatsApp31.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp31.jpeg; sourceTree = "<group>"; };
+		FA95E3422056EDF5001CE38A /* WhatsApp93.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp93.jpeg; sourceTree = "<group>"; };
+		FA95E3432056EDF5001CE38A /* WhatsApp85.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp85.jpeg; sourceTree = "<group>"; };
+		FA95E3452056EDF5001CE38A /* WhatsApp46.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp46.jpeg; sourceTree = "<group>"; };
+		FA95E3462056EDF5001CE38A /* WhatsApp11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp11.jpeg; sourceTree = "<group>"; };
+		FA95E3472056EDF5001CE38A /* WhatsApp50.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp50.jpeg; sourceTree = "<group>"; };
+		FA95E3482056EDF5001CE38A /* WhatsApp51.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp51.jpeg; sourceTree = "<group>"; };
+		FA95E3492056EDF5001CE38A /* WhatsApp10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp10.jpeg; sourceTree = "<group>"; };
+		FA95E34A2056EDF5001CE38A /* WhatsApp47.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp47.jpeg; sourceTree = "<group>"; };
+		FA95E34C2056EDF5001CE38A /* WhatsApp84.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp84.jpeg; sourceTree = "<group>"; };
+		FA95E34D2056EDF5001CE38A /* WhatsApp92.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp92.jpeg; sourceTree = "<group>"; };
+		FA95E34E2056EDF5001CE38A /* WhatsApp30.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp30.jpeg; sourceTree = "<group>"; };
+		FA95E34F2056EDF5001CE38A /* WhatsApp67.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp67.jpeg; sourceTree = "<group>"; };
+		FA95E3502056EDF5001CE38A /* WhatsApp88.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp88.jpeg; sourceTree = "<group>"; };
+		FA95E3512056EDF5001CE38A /* WhatsApp71.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp71.jpeg; sourceTree = "<group>"; };
+		FA95E3522056EDF5001CE38A /* WhatsApp26.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp26.jpeg; sourceTree = "<group>"; };
+		FA95E3B82056F56A001CE38A /* WhatsApp1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp1.jpeg; sourceTree = "<group>"; };
+		FA95E3B92056F56B001CE38A /* WhatsApp0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp0.jpeg; sourceTree = "<group>"; };
+		FA95E3BA2056F56B001CE38A /* WhatsApp2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatsApp2.jpeg; sourceTree = "<group>"; };
+		FA95E3BF2056F98C001CE38A /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		FA95E3C02056F98C001CE38A /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA261A8A205469120071D412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1837F52055BE1A005FC84F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				FA1837FA2055BF49005FC84F /* cell */,
+				FA1837F62055BE38005FC84F /* GalleryVC.swift */,
+				FA1837F72055BE38005FC84F /* GalleryVC.xib */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		FA1837FA2055BF49005FC84F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA1837FB2055BF77005FC84F /* GalleryCVCell.swift */,
+				FA1837FC2055BF77005FC84F /* GalleryCVCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		FA261A84205469120071D412 = {
+			isa = PBXGroup;
+			children = (
+				FA261A8F205469120071D412 /* Arch */,
+				FA261A8E205469120071D412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA261A8E205469120071D412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA261A8D205469120071D412 /* Arch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA261A8F205469120071D412 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				FA95E2F32056EDF5001CE38A /* ImagesArch */,
+				FA261AC220546BBC0071D412 /* ViewController */,
+				FA261AB120546B030071D412 /* CommonClasses */,
+				FA261AA720546ACA0071D412 /* View */,
+				FA261AA220546A570071D412 /* Navigation */,
+				FA261A90205469120071D412 /* AppDelegate.swift */,
+				FA261A92205469120071D412 /* ViewController.swift */,
+				FA261A94205469120071D412 /* Main.storyboard */,
+				FA261A97205469120071D412 /* Assets.xcassets */,
+				FA261A99205469120071D412 /* LaunchScreen.storyboard */,
+				FA261A9C205469120071D412 /* Info.plist */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		FA261AA220546A570071D412 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA261AA320546A570071D412 /* NavigationVC.swift */,
+				FA261AA420546A570071D412 /* NavigationVC.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FA261AA720546ACA0071D412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA261AA820546ACA0071D412 /* SliderLeft */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA261AA820546ACA0071D412 /* SliderLeft */ = {
+			isa = PBXGroup;
+			children = (
+				FA261AA920546ACA0071D412 /* CustomLeftMenuTableViewCell.xib */,
+				FA261AAB20546ACA0071D412 /* CustomLeftMenuTableViewCell.swift */,
+				FA261AAC20546ACA0071D412 /* ViewLeftMenu.xib */,
+				FA261AAA20546ACA0071D412 /* ViewLeftMenu.swift */,
+			);
+			path = SliderLeft;
+			sourceTree = "<group>";
+		};
+		FA261AB120546B030071D412 /* CommonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FA261AB220546B030071D412 /* StringExt.swift */,
+				FA261AB320546B030071D412 /* ColorExt.swift */,
+				FA261AB420546B030071D412 /* Reachability.swift */,
+				FA261AB520546B030071D412 /* WebService.swift */,
+				FA261AB620546B030071D412 /* FontExt.swift */,
+				FA261AB720546B030071D412 /* CommonFile.swift */,
+				FA261AB820546B030071D412 /* AlertVCExt.swift */,
+				FA261AB920546B030071D412 /* DeviceInfo.swift */,
+			);
+			path = CommonClasses;
+			sourceTree = "<group>";
+		};
+		FA261AC220546BBC0071D412 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA95E3BE2056F961001CE38A /* CantactUs */,
+				FA1837F52055BE1A005FC84F /* Gallery */,
+				FA261AC320546BD40071D412 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA261AC320546BD40071D412 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA261AC420546BF00071D412 /* HomeVC.swift */,
+				FA261AC520546BF00071D412 /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA95E2F32056EDF5001CE38A /* ImagesArch */ = {
+			isa = PBXGroup;
+			children = (
+				FA95E3B92056F56B001CE38A /* WhatsApp0.jpeg */,
+				FA95E3B82056F56A001CE38A /* WhatsApp1.jpeg */,
+				FA95E3BA2056F56B001CE38A /* WhatsApp2.jpeg */,
+				FA95E2F42056EDF5001CE38A /* WhatsApp48.jpeg */,
+				FA95E2F52056EDF5001CE38A /* WhatsApp33.jpeg */,
+				FA95E2F62056EDF5001CE38A /* WhatsApp64.jpeg */,
+				FA95E2F72056EDF5001CE38A /* WhatsApp72.jpeg */,
+				FA95E2F82056EDF5001CE38A /* WhatsApp25.jpeg */,
+				FA95E2F92056EDF5001CE38A /* WhatsApp52.jpeg */,
+				FA95E2FA2056EDF5001CE38A /* WhatsApp13.jpeg */,
+				FA95E2FB2056EDF5001CE38A /* WhatsApp44.jpeg */,
+				FA95E2FC2056EDF5001CE38A /* WhatsApp3.jpeg */,
+				FA95E2FD2056EDF5001CE38A /* WhatsApp87.jpeg */,
+				FA95E2FE2056EDF5001CE38A /* WhatsApp68.jpeg */,
+				FA95E2FF2056EDF5001CE38A /* WhatsApp91.jpeg */,
+				FA95E3002056EDF5001CE38A /* WhatsApp29.jpeg */,
+				FA95E3012056EDF5001CE38A /* WhatsApp28.jpeg */,
+				FA95E3022056EDF5001CE38A /* WhatsApp90.jpeg */,
+				FA95E3032056EDF5001CE38A /* WhatsApp86.jpeg */,
+				FA95E3042056EDF5001CE38A /* WhatsApp69.jpeg */,
+				FA95E3062056EDF5001CE38A /* WhatsApp45.jpeg */,
+				FA95E3072056EDF5001CE38A /* WhatsApp12.jpeg */,
+				FA95E3082056EDF5001CE38A /* WhatsApp53.jpeg */,
+				FA95E3092056EDF5001CE38A /* WhatsApp24.jpeg */,
+				FA95E30A2056EDF5001CE38A /* WhatsApp73.jpeg */,
+				FA95E30B2056EDF5001CE38A /* WhatsApp65.jpeg */,
+				FA95E30C2056EDF5001CE38A /* WhatsApp32.jpeg */,
+				FA95E30D2056EDF5001CE38A /* WhatsApp49.jpeg */,
+				FA95E30E2056EDF5001CE38A /* WhatsApp54.jpeg */,
+				FA95E30F2056EDF5001CE38A /* WhatsApp15.jpeg */,
+				FA95E3102056EDF5001CE38A /* WhatsApp42.jpeg */,
+				FA95E3112056EDF5001CE38A /* WhatsApp5.jpeg */,
+				FA95E3122056EDF5001CE38A /* WhatsApp39.jpeg */,
+				FA95E3132056EDF5001CE38A /* WhatsApp81.jpeg */,
+				FA95E3142056EDF5001CE38A /* WhatsApp78.jpeg */,
+				FA95E3152056EDF5001CE38A /* WhatsApp58.jpeg */,
+				FA95E3162056EDF5001CE38A /* WhatsApp19.jpeg */,
+				FA95E3172056EDF5001CE38A /* WhatsApp9.jpeg */,
+				FA95E3182056EDF5001CE38A /* WhatsApp35.jpeg */,
+				FA95E3192056EDF5001CE38A /* WhatsApp62.jpeg */,
+				FA95E31A2056EDF5001CE38A /* WhatsApp74.jpeg */,
+				FA95E31B2056EDF5001CE38A /* WhatsApp23.jpeg */,
+				FA95E31C2056EDF5001CE38A /* WhatsApp22.jpeg */,
+				FA95E31D2056EDF5001CE38A /* WhatsApp75.jpeg */,
+				FA95E31E2056EDF5001CE38A /* WhatsApp63.jpeg */,
+				FA95E31F2056EDF5001CE38A /* WhatsApp8.jpeg */,
+				FA95E3202056EDF5001CE38A /* WhatsApp34.jpeg */,
+				FA95E3212056EDF5001CE38A /* WhatsApp18.jpeg */,
+				FA95E3222056EDF5001CE38A /* WhatsApp59.jpeg */,
+				FA95E3232056EDF5001CE38A /* WhatsApp79.jpeg */,
+				FA95E3242056EDF5001CE38A /* WhatsApp80.jpeg */,
+				FA95E3252056EDF5001CE38A /* WhatsApp4.jpeg */,
+				FA95E3262056EDF5001CE38A /* WhatsApp38.jpeg */,
+				FA95E3272056EDF5001CE38A /* WhatsApp43.jpeg */,
+				FA95E3282056EDF5001CE38A /* WhatsApp14.jpeg */,
+				FA95E3292056EDF5001CE38A /* WhatsApp55.jpeg */,
+				FA95E32A2056EDF5001CE38A /* WhatsApp83.jpeg */,
+				FA95E32B2056EDF5001CE38A /* WhatsApp7.jpeg */,
+				FA95E32C2056EDF5001CE38A /* WhatsApp40.jpeg */,
+				FA95E32D2056EDF5001CE38A /* WhatsApp17.jpeg */,
+				FA95E32E2056EDF5001CE38A /* WhatsApp56.jpeg */,
+				FA95E32F2056EDF5001CE38A /* WhatsApp21.jpeg */,
+				FA95E3302056EDF5001CE38A /* WhatsApp76.jpeg */,
+				FA95E3312056EDF5001CE38A /* WhatsApp60.jpeg */,
+				FA95E3322056EDF5001CE38A /* WhatsApp37.jpeg */,
+				FA95E3332056EDF5001CE38A /* WhatsApp36.jpeg */,
+				FA95E3342056EDF5001CE38A /* WhatsApp61.jpeg */,
+				FA95E3352056EDF5001CE38A /* WhatsApp77.jpeg */,
+				FA95E3362056EDF5001CE38A /* WhatsApp20.jpeg */,
+				FA95E3372056EDF5001CE38A /* WhatsApp57.jpeg */,
+				FA95E3382056EDF5001CE38A /* WhatsApp16.jpeg */,
+				FA95E3392056EDF5001CE38A /* WhatsApp41.jpeg */,
+				FA95E33A2056EDF5001CE38A /* WhatsApp6.jpeg */,
+				FA95E33B2056EDF5001CE38A /* WhatsApp82.jpeg */,
+				FA95E33C2056EDF5001CE38A /* WhatsApp94.jpeg */,
+				FA95E33D2056EDF5001CE38A /* WhatsApp27.jpeg */,
+				FA95E33E2056EDF5001CE38A /* WhatsApp70.jpeg */,
+				FA95E33F2056EDF5001CE38A /* WhatsApp66.jpeg */,
+				FA95E3402056EDF5001CE38A /* WhatsApp89.jpeg */,
+				FA95E3412056EDF5001CE38A /* WhatsApp31.jpeg */,
+				FA95E3422056EDF5001CE38A /* WhatsApp93.jpeg */,
+				FA95E3432056EDF5001CE38A /* WhatsApp85.jpeg */,
+				FA95E3452056EDF5001CE38A /* WhatsApp46.jpeg */,
+				FA95E3462056EDF5001CE38A /* WhatsApp11.jpeg */,
+				FA95E3472056EDF5001CE38A /* WhatsApp50.jpeg */,
+				FA95E3482056EDF5001CE38A /* WhatsApp51.jpeg */,
+				FA95E3492056EDF5001CE38A /* WhatsApp10.jpeg */,
+				FA95E34A2056EDF5001CE38A /* WhatsApp47.jpeg */,
+				FA95E34C2056EDF5001CE38A /* WhatsApp84.jpeg */,
+				FA95E34D2056EDF5001CE38A /* WhatsApp92.jpeg */,
+				FA95E34E2056EDF5001CE38A /* WhatsApp30.jpeg */,
+				FA95E34F2056EDF5001CE38A /* WhatsApp67.jpeg */,
+				FA95E3502056EDF5001CE38A /* WhatsApp88.jpeg */,
+				FA95E3512056EDF5001CE38A /* WhatsApp71.jpeg */,
+				FA95E3522056EDF5001CE38A /* WhatsApp26.jpeg */,
+			);
+			path = ImagesArch;
+			sourceTree = "<group>";
+		};
+		FA95E3BE2056F961001CE38A /* CantactUs */ = {
+			isa = PBXGroup;
+			children = (
+				FA95E3BF2056F98C001CE38A /* ContactUsVC.swift */,
+				FA95E3C02056F98C001CE38A /* ContactUsVC.xib */,
+			);
+			path = CantactUs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA261A8C205469120071D412 /* Arch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA261A9F205469120071D412 /* Build configuration list for PBXNativeTarget "Arch" */;
+			buildPhases = (
+				FA261A89205469120071D412 /* Sources */,
+				FA261A8A205469120071D412 /* Frameworks */,
+				FA261A8B205469120071D412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arch;
+			productName = Arch;
+			productReference = FA261A8D205469120071D412 /* Arch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA261A85205469120071D412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = RP;
+				TargetAttributes = {
+					FA261A8C205469120071D412 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = FA261A88205469120071D412 /* Build configuration list for PBXProject "Arch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA261A84205469120071D412;
+			productRefGroup = FA261A8E205469120071D412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA261A8C205469120071D412 /* Arch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA261A8B205469120071D412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95E39C2056EDF6001CE38A /* WhatsApp27.jpeg in Resources */,
+				FA95E39E2056EDF6001CE38A /* WhatsApp66.jpeg in Resources */,
+				FA95E3A02056EDF6001CE38A /* WhatsApp31.jpeg in Resources */,
+				FA95E3572056EDF6001CE38A /* WhatsApp25.jpeg in Resources */,
+				FA95E3672056EDF6001CE38A /* WhatsApp53.jpeg in Resources */,
+				FA95E37F2056EDF6001CE38A /* WhatsApp34.jpeg in Resources */,
+				FA95E3AD2056EDF6001CE38A /* WhatsApp30.jpeg in Resources */,
+				FA261AB020546ACA0071D412 /* ViewLeftMenu.xib in Resources */,
+				FA95E3622056EDF6001CE38A /* WhatsApp86.jpeg in Resources */,
+				FA95E36D2056EDF6001CE38A /* WhatsApp54.jpeg in Resources */,
+				FA95E36A2056EDF6001CE38A /* WhatsApp65.jpeg in Resources */,
+				FA95E3792056EDF6001CE38A /* WhatsApp74.jpeg in Resources */,
+				FA95E37B2056EDF6001CE38A /* WhatsApp22.jpeg in Resources */,
+				FA95E3552056EDF6001CE38A /* WhatsApp64.jpeg in Resources */,
+				FA95E35A2056EDF6001CE38A /* WhatsApp44.jpeg in Resources */,
+				FA95E3982056EDF6001CE38A /* WhatsApp41.jpeg in Resources */,
+				FA95E3602056EDF6001CE38A /* WhatsApp28.jpeg in Resources */,
+				FA95E3932056EDF6001CE38A /* WhatsApp61.jpeg in Resources */,
+				FA95E3532056EDF6001CE38A /* WhatsApp48.jpeg in Resources */,
+				FA261AAD20546ACA0071D412 /* CustomLeftMenuTableViewCell.xib in Resources */,
+				FA95E3802056EDF6001CE38A /* WhatsApp18.jpeg in Resources */,
+				FA261A9B205469120071D412 /* LaunchScreen.storyboard in Resources */,
+				FA95E35B2056EDF6001CE38A /* WhatsApp3.jpeg in Resources */,
+				FA95E3972056EDF6001CE38A /* WhatsApp16.jpeg in Resources */,
+				FA95E3762056EDF6001CE38A /* WhatsApp9.jpeg in Resources */,
+				FA261A98205469120071D412 /* Assets.xcassets in Resources */,
+				FA95E3B12056EDF6001CE38A /* WhatsApp26.jpeg in Resources */,
+				FA95E36E2056EDF6001CE38A /* WhatsApp15.jpeg in Resources */,
+				FA95E3A22056EDF6001CE38A /* WhatsApp85.jpeg in Resources */,
+				FA95E3902056EDF6001CE38A /* WhatsApp60.jpeg in Resources */,
+				FA95E3A42056EDF6001CE38A /* WhatsApp46.jpeg in Resources */,
+				FA95E39B2056EDF6001CE38A /* WhatsApp94.jpeg in Resources */,
+				FA95E35C2056EDF6001CE38A /* WhatsApp87.jpeg in Resources */,
+				FA95E3AF2056EDF6001CE38A /* WhatsApp88.jpeg in Resources */,
+				FA1837FE2055BF77005FC84F /* GalleryCVCell.xib in Resources */,
+				FA95E38C2056EDF6001CE38A /* WhatsApp17.jpeg in Resources */,
+				FA95E36F2056EDF6001CE38A /* WhatsApp42.jpeg in Resources */,
+				FA95E39D2056EDF6001CE38A /* WhatsApp70.jpeg in Resources */,
+				FA261AA620546A570071D412 /* NavigationVC.xib in Resources */,
+				FA95E3A52056EDF6001CE38A /* WhatsApp11.jpeg in Resources */,
+				FA95E37E2056EDF6001CE38A /* WhatsApp8.jpeg in Resources */,
+				FA261A96205469120071D412 /* Main.storyboard in Resources */,
+				FA95E3A82056EDF6001CE38A /* WhatsApp10.jpeg in Resources */,
+				FA261AC720546BF00071D412 /* HomeVC.xib in Resources */,
+				FA95E3912056EDF6001CE38A /* WhatsApp37.jpeg in Resources */,
+				FA95E3862056EDF6001CE38A /* WhatsApp43.jpeg in Resources */,
+				FA95E39F2056EDF6001CE38A /* WhatsApp89.jpeg in Resources */,
+				FA95E3652056EDF6001CE38A /* WhatsApp45.jpeg in Resources */,
+				FA95E36C2056EDF6001CE38A /* WhatsApp49.jpeg in Resources */,
+				FA95E3712056EDF6001CE38A /* WhatsApp39.jpeg in Resources */,
+				FA95E3AB2056EDF6001CE38A /* WhatsApp84.jpeg in Resources */,
+				FA95E35F2056EDF6001CE38A /* WhatsApp29.jpeg in Resources */,
+				FA95E3752056EDF6001CE38A /* WhatsApp19.jpeg in Resources */,
+				FA95E3702056EDF6001CE38A /* WhatsApp5.jpeg in Resources */,
+				FA95E3812056EDF6001CE38A /* WhatsApp59.jpeg in Resources */,
+				FA95E3562056EDF6001CE38A /* WhatsApp72.jpeg in Resources */,
+				FA95E3AE2056EDF6001CE38A /* WhatsApp67.jpeg in Resources */,
+				FA95E3542056EDF6001CE38A /* WhatsApp33.jpeg in Resources */,
+				FA95E3692056EDF6001CE38A /* WhatsApp73.jpeg in Resources */,
+				FA95E3BB2056F56B001CE38A /* WhatsApp1.jpeg in Resources */,
+				FA95E38A2056EDF6001CE38A /* WhatsApp7.jpeg in Resources */,
+				FA95E3662056EDF6001CE38A /* WhatsApp12.jpeg in Resources */,
+				FA95E3742056EDF6001CE38A /* WhatsApp58.jpeg in Resources */,
+				FA95E3872056EDF6001CE38A /* WhatsApp14.jpeg in Resources */,
+				FA95E3A62056EDF6001CE38A /* WhatsApp50.jpeg in Resources */,
+				FA95E3992056EDF6001CE38A /* WhatsApp6.jpeg in Resources */,
+				FA95E3BC2056F56B001CE38A /* WhatsApp0.jpeg in Resources */,
+				FA95E3822056EDF6001CE38A /* WhatsApp79.jpeg in Resources */,
+				FA95E3BD2056F56B001CE38A /* WhatsApp2.jpeg in Resources */,
+				FA95E3722056EDF6001CE38A /* WhatsApp81.jpeg in Resources */,
+				FA95E39A2056EDF6001CE38A /* WhatsApp82.jpeg in Resources */,
+				FA95E3582056EDF6001CE38A /* WhatsApp52.jpeg in Resources */,
+				FA95E35E2056EDF6001CE38A /* WhatsApp91.jpeg in Resources */,
+				FA95E3612056EDF6001CE38A /* WhatsApp90.jpeg in Resources */,
+				FA95E3C22056F98C001CE38A /* ContactUsVC.xib in Resources */,
+				FA95E38E2056EDF6001CE38A /* WhatsApp21.jpeg in Resources */,
+				FA95E3782056EDF6001CE38A /* WhatsApp62.jpeg in Resources */,
+				FA95E3AC2056EDF6001CE38A /* WhatsApp92.jpeg in Resources */,
+				FA95E37D2056EDF6001CE38A /* WhatsApp63.jpeg in Resources */,
+				FA95E3942056EDF6001CE38A /* WhatsApp77.jpeg in Resources */,
+				FA95E3B02056EDF6001CE38A /* WhatsApp71.jpeg in Resources */,
+				FA95E3842056EDF6001CE38A /* WhatsApp4.jpeg in Resources */,
+				FA95E3A72056EDF6001CE38A /* WhatsApp51.jpeg in Resources */,
+				FA95E3682056EDF6001CE38A /* WhatsApp24.jpeg in Resources */,
+				FA95E3632056EDF6001CE38A /* WhatsApp69.jpeg in Resources */,
+				FA95E3732056EDF6001CE38A /* WhatsApp78.jpeg in Resources */,
+				FA95E38B2056EDF6001CE38A /* WhatsApp40.jpeg in Resources */,
+				FA95E3852056EDF6001CE38A /* WhatsApp38.jpeg in Resources */,
+				FA95E3A12056EDF6001CE38A /* WhatsApp93.jpeg in Resources */,
+				FA95E35D2056EDF6001CE38A /* WhatsApp68.jpeg in Resources */,
+				FA95E3892056EDF6001CE38A /* WhatsApp83.jpeg in Resources */,
+				FA95E38D2056EDF6001CE38A /* WhatsApp56.jpeg in Resources */,
+				FA95E3772056EDF6001CE38A /* WhatsApp35.jpeg in Resources */,
+				FA95E37A2056EDF6001CE38A /* WhatsApp23.jpeg in Resources */,
+				FA1837F92055BE38005FC84F /* GalleryVC.xib in Resources */,
+				FA95E3A92056EDF6001CE38A /* WhatsApp47.jpeg in Resources */,
+				FA95E3922056EDF6001CE38A /* WhatsApp36.jpeg in Resources */,
+				FA95E3952056EDF6001CE38A /* WhatsApp20.jpeg in Resources */,
+				FA95E3962056EDF6001CE38A /* WhatsApp57.jpeg in Resources */,
+				FA95E3882056EDF6001CE38A /* WhatsApp55.jpeg in Resources */,
+				FA95E37C2056EDF6001CE38A /* WhatsApp75.jpeg in Resources */,
+				FA95E38F2056EDF6001CE38A /* WhatsApp76.jpeg in Resources */,
+				FA95E3832056EDF6001CE38A /* WhatsApp80.jpeg in Resources */,
+				FA95E36B2056EDF6001CE38A /* WhatsApp32.jpeg in Resources */,
+				FA95E3592056EDF6001CE38A /* WhatsApp13.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA261A89205469120071D412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA261ABD20546B030071D412 /* WebService.swift in Sources */,
+				FA1837F82055BE38005FC84F /* GalleryVC.swift in Sources */,
+				FA261AC620546BF00071D412 /* HomeVC.swift in Sources */,
+				FA261AAE20546ACA0071D412 /* ViewLeftMenu.swift in Sources */,
+				FA261AC120546B030071D412 /* DeviceInfo.swift in Sources */,
+				FA261AA520546A570071D412 /* NavigationVC.swift in Sources */,
+				FA261A93205469120071D412 /* ViewController.swift in Sources */,
+				FA95E3C12056F98C001CE38A /* ContactUsVC.swift in Sources */,
+				FA1837FD2055BF77005FC84F /* GalleryCVCell.swift in Sources */,
+				FA261A91205469120071D412 /* AppDelegate.swift in Sources */,
+				FA261ABA20546B030071D412 /* StringExt.swift in Sources */,
+				FA261AAF20546ACA0071D412 /* CustomLeftMenuTableViewCell.swift in Sources */,
+				FA261ABC20546B030071D412 /* Reachability.swift in Sources */,
+				FA261ABE20546B030071D412 /* FontExt.swift in Sources */,
+				FA261AC020546B030071D412 /* AlertVCExt.swift in Sources */,
+				FA261ABB20546B030071D412 /* ColorExt.swift in Sources */,
+				FA261ABF20546B030071D412 /* CommonFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA261A94205469120071D412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA261A95205469120071D412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA261A99205469120071D412 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA261A9A205469120071D412 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA261A9D205469120071D412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA261A9E205469120071D412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA261AA0205469120071D412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: prashant khatri (2PX2UQ674P)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Arch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33557df3-1cbf-4460-87ff-7c49270f1195";
+				PROVISIONING_PROFILE_SPECIFIER = "provision profile test";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA261AA1205469120071D412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: prashant khatri (2PX2UQ674P)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Arch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33557df3-1cbf-4460-87ff-7c49270f1195";
+				PROVISIONING_PROFILE_SPECIFIER = "provision profile test";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA261A88205469120071D412 /* Build configuration list for PBXProject "Arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA261A9D205469120071D412 /* Debug */,
+				FA261A9E205469120071D412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA261A9F205469120071D412 /* Build configuration list for PBXNativeTarget "Arch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA261AA0205469120071D412 /* Debug */,
+				FA261AA1205469120071D412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA261A85205469120071D412 /* Project object */;
+}

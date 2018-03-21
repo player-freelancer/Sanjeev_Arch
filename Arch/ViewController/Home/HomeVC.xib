@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Arch" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kop-fI-5dI">
+                    <rect key="frame" x="0.0" y="5" width="375" height="370"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp0.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dDG-yo-txF">
+                            <rect key="frame" x="5" y="0.0" width="180" height="180"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp12.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-RX-MjT">
+                            <rect key="frame" x="190" y="0.0" width="180" height="180"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp18.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0Yj-nV-CPQ">
+                            <rect key="frame" x="5" y="185" width="180" height="180"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp28.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-R8-RhB">
+                            <rect key="frame" x="190" y="185" width="180" height="180"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qSn-RX-MjT" firstAttribute="top" secondItem="Kop-fI-5dI" secondAttribute="top" id="0qK-3e-cBl"/>
+                        <constraint firstAttribute="trailing" secondItem="BNs-R8-RhB" secondAttribute="trailing" constant="5" id="8Mu-zx-G4Z"/>
+                        <constraint firstItem="0Yj-nV-CPQ" firstAttribute="height" secondItem="dDG-yo-txF" secondAttribute="height" id="8k4-hy-5LX"/>
+                        <constraint firstItem="BNs-R8-RhB" firstAttribute="top" secondItem="qSn-RX-MjT" secondAttribute="bottom" constant="5" id="9Rh-Zd-aEy"/>
+                        <constraint firstItem="0Yj-nV-CPQ" firstAttribute="width" secondItem="dDG-yo-txF" secondAttribute="width" id="Anr-jC-kkt"/>
+                        <constraint firstAttribute="height" constant="370" id="CNT-p5-PRN"/>
+                        <constraint firstItem="BNs-R8-RhB" firstAttribute="width" secondItem="dDG-yo-txF" secondAttribute="width" id="CvO-rC-39k"/>
+                        <constraint firstItem="0Yj-nV-CPQ" firstAttribute="leading" secondItem="Kop-fI-5dI" secondAttribute="leading" constant="5" id="FYe-e8-Yq8"/>
+                        <constraint firstItem="dDG-yo-txF" firstAttribute="leading" secondItem="Kop-fI-5dI" secondAttribute="leading" constant="5" id="Fei-R8-Cph"/>
+                        <constraint firstItem="qSn-RX-MjT" firstAttribute="width" secondItem="dDG-yo-txF" secondAttribute="width" id="IDB-X5-47W"/>
+                        <constraint firstAttribute="bottom" secondItem="BNs-R8-RhB" secondAttribute="bottom" constant="5" id="MAc-du-H8V"/>
+                        <constraint firstItem="qSn-RX-MjT" firstAttribute="height" secondItem="dDG-yo-txF" secondAttribute="height" id="TdA-Bl-h9z"/>
+                        <constraint firstItem="qSn-RX-MjT" firstAttribute="leading" secondItem="dDG-yo-txF" secondAttribute="trailing" constant="5" id="gc6-6n-GhN"/>
+                        <constraint firstItem="BNs-R8-RhB" firstAttribute="leading" secondItem="0Yj-nV-CPQ" secondAttribute="trailing" constant="5" id="n8k-bb-oBw"/>
+                        <constraint firstAttribute="bottom" secondItem="0Yj-nV-CPQ" secondAttribute="bottom" constant="5" id="nLz-QD-XtB"/>
+                        <constraint firstAttribute="trailing" secondItem="qSn-RX-MjT" secondAttribute="trailing" constant="5" id="src-lb-ql6"/>
+                        <constraint firstItem="BNs-R8-RhB" firstAttribute="height" secondItem="dDG-yo-txF" secondAttribute="height" id="uu6-Cf-2hY"/>
+                        <constraint firstItem="0Yj-nV-CPQ" firstAttribute="top" secondItem="dDG-yo-txF" secondAttribute="bottom" constant="5" id="vPP-Yv-0y1"/>
+                        <constraint firstItem="dDG-yo-txF" firstAttribute="top" secondItem="Kop-fI-5dI" secondAttribute="top" id="z4B-5d-lTs"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-sp-R9g">
+                    <rect key="frame" x="16" y="383" width="343" height="284"/>
+                    <string key="text">The longer I live, the more beautiful life becomes. If you foolishly ignore beauty, you will soon find yourself without it. Your life will be impoverished. But if you invest in beauty, it will remain with you all the days of your life.</string>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kop-fI-5dI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3oL-4W-Bpv"/>
+                <constraint firstItem="Kop-fI-5dI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="JOZ-Ld-eNJ"/>
+                <constraint firstItem="Kop-fI-5dI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JWV-iN-NDt"/>
+                <constraint firstItem="Oly-sp-R9g" firstAttribute="top" secondItem="Kop-fI-5dI" secondAttribute="bottom" constant="8" id="MJ6-XZ-dVU"/>
+                <constraint firstItem="Oly-sp-R9g" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="MK7-Ao-UkD"/>
+                <constraint firstItem="Oly-sp-R9g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TRT-Uq-wLr"/>
+                <constraint firstItem="Kop-fI-5dI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="knr-IT-wxz"/>
+                <constraint firstItem="Kop-fI-5dI" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="mdR-BB-9Mk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oly-sp-R9g" secondAttribute="trailing" constant="16" id="snY-2G-UTV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.5" y="79.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WhatsApp0.jpeg" width="1280" height="746"/>
+        <image name="WhatsApp12.jpeg" width="960" height="1280"/>
+        <image name="WhatsApp18.jpeg" width="1050" height="788"/>
+        <image name="WhatsApp28.jpeg" width="1080" height="720"/>
+    </resources>
+</document>
